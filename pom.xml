@@ -28,9 +28,9 @@
     </developers>
 
     <scm>
-        <url>https://github.com/trixon/netbeans-websearch-plugin</url>
-        <connection>scm:git:git://github.com/trixon/netbeans-websearch-plugin.git</connection>
-        <developerConnection>scm:git:git@github.com:trixon/netbeans-websearch-plugin.git</developerConnection>
+        <url>https://github.com/trixon/netbeans-plugin-websearch</url>
+        <connection>scm:git:git://github.com/trixon/netbeans-plugin-websearch.git</connection>
+        <developerConnection>scm:git:git@github.com:trixon/netbeans-plugin-websearch.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
 
@@ -42,9 +42,8 @@
                 <version>14.2</version>
                 <extensions>true</extensions>
                 <configuration>
-                    <licenseFile>license.txt</licenseFile>
                     <author>Patrik Karlström</author>
-                    <homePageUrl>https://github.com/trixon/netbeans-websearch-plugin</homePageUrl>
+                    <homePageUrl>https://github.com/trixon/netbeans-plugin-websearch</homePageUrl>
                     <licenseName>Apache License, Version 2.0</licenseName>
                     <licenseFile>LICENSE</licenseFile>
                 </configuration>
@@ -55,8 +54,12 @@
                 <version>3.13.0</version>
                 <configuration>
                     <showDeprecation>true</showDeprecation>
-                    <debug>false</debug>
-                    <release>21</release>
+                    <debug>true</debug>
+                    <source>21</source>
+                    <target>21</target>
+                    <compilerArgs>
+                        <arg>-Xlint</arg>
+                    </compilerArgs>
                 </configuration>
             </plugin>
             <plugin>
